@@ -3,7 +3,7 @@ description: A new Flutter project.
 publish_to: "none"
 version: 1.0.0+1
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -11,10 +11,16 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_blue: ^0.8.0
   bluetooth_connector: ^0.0.3
-  flutter_riverpod: ^1.0.4
+  flutter_riverpod: ^2.2.0
+
   shared_preferences: ^2.0.15
-  flutter_launcher_icons: ^0.10.0
+  flutter_launcher_icons: ^0.12.0
   lottie: ^2.1.0
+
+  #Firebase Database
+  cloud_firestore: ^4.4.3
+  firebase_core: ^2.7.0
+  riverpod: ^2.2.0
 
 dev_dependencies:
   flutter_test:

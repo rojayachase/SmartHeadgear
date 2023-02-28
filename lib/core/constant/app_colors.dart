@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  static const Color primaryColor = Color(0xff010286);
+  static const Color primaryColor = Color.fromARGB(214, 255, 145, 0);
 
   static const Color accentColor = Color(0xff3DADF7);
 
-  static const Color hintColor = Color(0xff9A97B5);
+  static const Color hintColor = Color.fromARGB(255, 73, 72, 77);
 
   static const Color borderColor = Color(0xffEAEAEA);
 

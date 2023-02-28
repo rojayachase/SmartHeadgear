@@ -8,6 +8,7 @@ import 'package:anapact/views/widgets/sized_boxes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+//first screen that the app goes to outside of the splash screen
 class BluetoothScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -18,6 +19,11 @@ class BluetoothScreen extends ConsumerWidget {
         title: Text('Bluetooth'),
         elevation: 4,
         actions: [
+          ElevatedButton(
+              child: const Text('Feedback'),
+              onPressed: () {
+                Navigator.of(context).pushNamed(Routes.logIn);
+              }),
           IconButton(
             onPressed: () {
               provider.getNewBluetoothDevices();
@@ -30,7 +36,12 @@ class BluetoothScreen extends ConsumerWidget {
               Navigator.of(context).pushNamed(Routes.bothUserScreen);
             },
             icon: Icon(Icons.attractions_outlined),
-          )
+          ),
+          ElevatedButton(
+              child: const Text('Log In'),
+              onPressed: () {
+                Navigator.of(context).pushNamed(Routes.logIn);
+              }),
         ],
       ),
       backgroundColor: AppColors.backgroundColor,

@@ -2,6 +2,8 @@ import 'package:anapact/views/screens/bluetooth/bluetooth_screen.dart';
 import 'package:anapact/views/screens/bluetooth/both_user_screen.dart';
 import 'package:anapact/views/screens/bluetooth/found_sensor_screen.dart';
 import 'package:anapact/views/screens/bluetooth/pair_sensor_screen.dart';
+//my import
+import 'package:anapact/views/screens/Login/log_in.dart';
 import 'package:anapact/views/screens/punch_data/punch_data.dart';
 import 'package:anapact/views/screens/splash/splash.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +17,8 @@ class Routes {
   static const String bothUserScreen = '/bothUserScreen';
   static const String foundSensorScreen = '/foundSensorScreen';
   static const String pairSensorScreen = '/pairSensorScreen';
+  //testing screen navigator
+  static const String logIn = '/login';
 }
 
 class RouteGenerator {
@@ -36,6 +40,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => FoundSensorScreen());
       case Routes.pairSensorScreen:
         return MaterialPageRoute(builder: (_) => PairSensorScreeen());
+      case Routes.logIn:
+        return MaterialPageRoute(builder: (_) => LogIn());
       default:
         return null;
     }

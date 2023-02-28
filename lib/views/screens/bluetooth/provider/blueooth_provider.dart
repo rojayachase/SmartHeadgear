@@ -7,14 +7,15 @@ import 'package:flutter_blue/flutter_blue.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final AutoDisposeChangeNotifierProvider<BluetoothProvider> bluetoothProvider =
-    ChangeNotifierProvider.autoDispose((ref) => BluetoothProvider(ref.read));
+    ChangeNotifierProvider.autoDispose((ref) => BluetoothProvider(ref));
 
 class BluetoothProvider extends ChangeNotifier {
   Map<String, String> deviceUserName = {};
   Map<String, List<double>> devicePunchValues = {};
   List<BluetoothDevice> connectedBluetoothDevice = [];
 
-  final Reader ref;
+  final Ref ref;
+
   bool isLoading = true;
   List<ScanResult> bluetoothList = [];
 
