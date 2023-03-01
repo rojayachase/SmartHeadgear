@@ -1,8 +1,6 @@
-import 'package:anapact/_dummy_data_need_to_remove_global/res/res.dart';
 import 'package:anapact/components/my_textfield.dart';
 import 'package:anapact/components/sign_in_button.dart';
 import 'package:anapact/components/square_tile.dart';
-import 'package:anapact/main.dart';
 import 'package:flutter/material.dart';
 import 'package:anapact/core/constant/app_colors.dart';
 
