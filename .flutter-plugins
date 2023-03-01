@@ -2,6 +2,8 @@
 bluetooth_connector=/Users/success/Projects/flutter/.pub-cache/hosted/pub.dartlang.org/bluetooth_connector-0.0.3/
 cloud_firestore=/Users/success/Projects/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-4.4.3/
 cloud_firestore_web=/Users/success/Projects/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-3.3.3/
+firebase_auth=/Users/success/Projects/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-4.2.9/
+firebase_auth_web=/Users/success/Projects/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-5.2.8/
 firebase_core=/Users/success/Projects/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-2.7.0/
 firebase_core_web=/Users/success/Projects/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-2.2.1/
 flutter_blue=/Users/success/Projects/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blue-0.8.0/
