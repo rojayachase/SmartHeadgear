@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void _navigateToNext() {
     Future.delayed(const Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context, Routes.bluetoothScreen);
+      Navigator.pushReplacementNamed(context, Routes.authPage);
     });
   }
 

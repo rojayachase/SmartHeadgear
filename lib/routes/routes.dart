@@ -19,6 +19,7 @@ class Routes {
   static const String pairSensorScreen = '/pairSensorScreen';
   //testing screen navigator
   static const String logIn = '/login';
+  static const String authPage = '/authPage';
 }
 
 class RouteGenerator {

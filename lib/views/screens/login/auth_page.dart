@@ -1,3 +1,4 @@
+import 'package:anapact/views/screens/bluetooth/bluetooth_screen.dart';
 import 'package:anapact/views/screens/login/log_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class AuthPage extends StatelessWidget {
           builder: (context, snapshot) {
             //user is logged in
             if (snapshot.hasData) {
-              return HomePage();
+              return BluetoothScreen();
             }
 
             //user is NOT logged in
