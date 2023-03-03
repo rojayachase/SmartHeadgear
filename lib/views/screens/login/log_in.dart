@@ -1,6 +1,7 @@
 import 'package:anapact/components/my_textfield.dart';
 import 'package:anapact/components/sign_in_button.dart';
 import 'package:anapact/components/square_tile.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:anapact/core/constant/app_colors.dart';
 
@@ -8,11 +9,17 @@ class LogIn extends StatelessWidget {
   LogIn({Key? key}) : super(key: key);
 
 //text editing controllers
-  final usernameController = TextEditingController();
+  final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
 //sign user in method
-  void signUserIn() {}
+  void signUserIn() async {
+    await FirebaseAuth.instance
+        .signInWithEmailAndPassword(
+          email: emailController.text,
+          password: passwordController.text
+          );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,10 +49,10 @@ class LogIn extends StatelessWidget {
 
             const SizedBox(height: 25),
 
-            //username textfield
+            //email textfield
             MyTextField(
-              controller: usernameController,
-              hintText: 'Username',
+              controller: emailController,
+              hintText: 'Email',
               obscureText: false,
             ),
 

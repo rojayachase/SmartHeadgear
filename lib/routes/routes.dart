@@ -7,6 +7,7 @@ import 'package:anapact/views/screens/Login/log_in.dart';
 import 'package:anapact/views/screens/punch_data/punch_data.dart';
 import 'package:anapact/views/screens/splash/splash.dart';
 import 'package:flutter/material.dart';
+import 'package:anapact/views/screens/login/auth_page.dart';
 
 class Routes {
   Routes._();
@@ -19,7 +20,7 @@ class Routes {
   static const String pairSensorScreen = '/pairSensorScreen';
   //testing screen navigator
   static const String logIn = '/login';
-  static const String authPage = '/authPage';
+  static const String authpage = '/authPage';
 }
 
 class RouteGenerator {
@@ -43,6 +44,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => PairSensorScreeen());
       case Routes.logIn:
         return MaterialPageRoute(builder: (_) => LogIn());
+      case Routes.authpage:
+        return MaterialPageRoute(builder: (_) => AuthPage());
       default:
         return null;
     }
