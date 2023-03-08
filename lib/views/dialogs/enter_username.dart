@@ -68,7 +68,7 @@ class EnterUserNameDialog extends StatelessWidget {
               Expanded(
                 child: PrimaryButton.outlined(
                   height: Sizes.s44.h,
-                  label: 'Cancle',
+                  label: 'Cancel',
                   textColor: Colors.black,
                   color: Colors.grey.shade300,
                   onPressed: () => Navigator.pop(context, false),

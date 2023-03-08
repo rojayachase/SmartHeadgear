@@ -39,7 +39,8 @@ class AnapactApp extends StatelessWidget {
       title: kAppName,
       navigatorKey: kNavigatorKey,
       theme: ThemeUtils.theme,
-      initialRoute: Routes.splashScreen,
+      //initialRoute: Routes.splashScreen,
+      initialRoute: Routes.bluetoothScreen,
       onGenerateRoute: RouteGenerator.generateRoute,
       builder: (context, child) {
         return ScrollConfiguration(
