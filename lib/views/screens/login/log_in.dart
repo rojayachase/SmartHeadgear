@@ -56,7 +56,7 @@ class _LogInState extends State<LogIn> {
     }
   }
 
-  // wrong email message popup
+  // error message to user
   void wrongEmailMessage() {
     showDialog(
       context: context,
@@ -74,30 +74,13 @@ class _LogInState extends State<LogIn> {
     );
   }
 
-// wrong password message popup
-  void wrongPasswordMessage() {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return const AlertDialog(
-          backgroundColor: Colors.deepPurple,
-          title: Center(
-            child: Text(
-              'Incorrect Password',
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
-        );
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.grey[300],
         body: SafeArea(
             child: Center(
+                child: SingleChildScrollView(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             SizedBox(height: 50),
 
@@ -226,6 +209,6 @@ class _LogInState extends State<LogIn> {
               ],
             )
           ]),
-        )));
+        ))));
   }
 }
