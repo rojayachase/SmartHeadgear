@@ -1,4 +1,3 @@
-import 'package:anapact/_dummy_data_need_to_remove_global/res/res.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

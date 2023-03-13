@@ -22,7 +22,7 @@ class BluetoothScreen extends ConsumerWidget {
           ElevatedButton(
               child: const Text('Feedback'),
               onPressed: () {
-                Navigator.of(context).pushNamed(Routes.logIn);
+                Navigator.of(context).pushNamed(Routes.loginpage);
               }),
           IconButton(
             onPressed: () {
@@ -40,7 +40,7 @@ class BluetoothScreen extends ConsumerWidget {
           ElevatedButton(
               child: const Text('Log In'),
               onPressed: () {
-                Navigator.of(context).pushNamed(Routes.logIn);
+                Navigator.of(context).pushNamed(Routes.loginpage);
               }),
         ],
       ),
