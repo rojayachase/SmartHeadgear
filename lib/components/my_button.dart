@@ -2,10 +2,11 @@
 import 'package:anapact/core/constant/app_colors.dart';
 import 'package:flutter/material.dart';
 
-class SignInButton extends StatelessWidget {
+class MyButton extends StatelessWidget {
   final Function()? onTap;
+  final String text;
 
-  const SignInButton({super.key, required this.onTap});
+  const MyButton({super.key, required this.onTap, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +19,10 @@ class SignInButton extends StatelessWidget {
           color: Colors.black,
           borderRadius: BorderRadius.circular(8),
         ),
-        child: const Center(
+        child: Center(
             child: Text(
-          "sign in",
-          style: TextStyle(
+          text,
+          style: const TextStyle(
             color: AppColors.lightPrimaryColor,
             fontWeight: FontWeight.bold,
             fontSize: 16,

@@ -1,5 +1,6 @@
 //import 'dart:js';
 
+import 'package:anapact/components/my_button.dart';
 import 'package:anapact/components/my_textfield.dart';
 import 'package:anapact/components/sign_in_button.dart';
 import 'package:anapact/components/square_tile.dart';
@@ -138,7 +139,8 @@ class _RegisterPageState extends State<RegisterPage> {
             const SizedBox(height: 25),
 
             //sign user up button
-            SignInButton(
+            MyButton(
+              text: 'Sign Up',
               onTap: signUserUp,
             ),
 

@@ -1,7 +1,7 @@
 //import 'dart:js';
 
 import 'package:anapact/components/my_textfield.dart';
-import 'package:anapact/components/sign_in_button.dart';
+import 'package:anapact/components/my_button.dart';
 import 'package:anapact/components/square_tile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -129,9 +129,10 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 25),
 
             //sign in button
-            SignInButton(
+            MyButton(
+              text: 'Sign In',
               onTap: signUserIn,
-            ),
+            ), // my BUtton
 
             const SizedBox(height: 50),
 
